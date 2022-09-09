@@ -4,8 +4,11 @@ header {
     background-color: #b4cded;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 5%;
 }
-
+nav {
+    background-color: black;
+}
 div {
     text-align: center;
 }
