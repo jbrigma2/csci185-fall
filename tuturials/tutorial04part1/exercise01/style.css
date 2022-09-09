@@ -8,13 +8,29 @@ header {
 }
 nav {
     background-color: black;
+    padding: 14px;
 }
 div {
     text-align: center;
 }
-a {
-display: block;
-}
+
 h1 {color:#008000;}
 p {margin-left:10px;}
 body {text-align:center;}
+
+a{ 
+    color:white;
+    text-decoration:none;
+    padding: 14px;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration:none ;
+  }
+  
+  p{
+    background-color: lightblue;
+    padding: 20px;
+  }
+  
