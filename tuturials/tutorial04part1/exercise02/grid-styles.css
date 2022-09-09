@@ -6,7 +6,34 @@ body {
 
 .grid-container {
     height: 100vh;
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+   min-height: 100vh;
 }
 
-/* create your child rules here:  */
+.item-1 {
+    grid-column-start:1;
+    grid-column-end:4;
+    background: purple;
+}
+.item-2 {
+    grid-column-start:3;
+    grid-column-end:6;
+    background-color: purple;
+}
+.item-3 {
+    grid-column-start:1;
+    grid-column-end:4;
+    background-color: purple;
+}
+.item-4 {
+    grid-column-start:3;
+    grid-column-end:6;
+    background-color: purple;
+}
+.item-5 {
+    grid-column-start:1;
+    grid-column-end:4;
+    background-color:purple;
+}
