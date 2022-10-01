@@ -30,11 +30,15 @@ body {
 aside {
     background-color: #000;
     grid-column-start: 1;
+   
 }
 header {
     background: #111;
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 
 /* Uncomment to see borders:  */
@@ -86,13 +90,24 @@ footer {
 /* Your Code Here */
 
 
-
 /********************************/
 /* Part B: Header & Nav Styling */
 /********************************/
 
 /* Your Code Here */
+#profile{
+    margin: 20px;
+    padding: 20px;
+    border: solid;
+    border-radius: 50vh;
+}
 
+#upgrade{
+    margin: 20px;
+    padding:20px ;
+    border: solid;
+    border-radius: 50vh;
+}
 
 
 
@@ -104,10 +119,18 @@ footer {
 /* Your Code Here.
    For the desktop view, there should be 5 cards per row.
 */
-
-
-
-
+ div{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-start: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-end: 1fr 1fr 1fr 1fr 1fr;
+ }
+ 
+ img{
+    width: 40vh;
+    height: 40vh;
+    border: solid;
+ }
 
 
 /**************************/
