@@ -95,19 +95,6 @@ footer {
 /********************************/
 
 /* Your Code Here */
-#profile{
-    margin: 20px;
-    padding: 20px;
-    border: solid;
-    border-radius: 50vh;
-}
-
-#upgrade{
-    margin: 20px;
-    padding:20px ;
-    border: solid;
-    border-radius: 50vh;
-}
 
 
 
@@ -119,19 +106,7 @@ footer {
 /* Your Code Here.
    For the desktop view, there should be 5 cards per row.
 */
- div{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-start: 1fr 1fr 1fr 1fr 1fr;
-    grid-column-end: 1fr 1fr 1fr 1fr 1fr;
- }
  
- img{
-    width: 40vh;
-    height: 40vh;
-    border: solid;
- }
-
 
 /**************************/
 /* Part D: Responsive UIs */
@@ -155,4 +130,63 @@ footer {
     */
 }
 
+aside i {
+    margin-right: 10px;
+}
 
+aside a {
+    padding: 10px;
+}
+
+aside h1 {
+    padding-top: 5px;
+    padding-left: 8px;
+}
+
+.fa-spotify {
+    font-size: 35px;
+}
+
+aside .selected {
+    border-left: rgb( 31, 179, 61) solid 2px;
+}
+
+header {display:flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header a {margin:20px;
+margin-top: 25px;}
+
+#upgrade {border: rgb(255,255,255) solid 1px;
+    border-radius: 42px; padding: 10px 40px;
+}
+
+#profile {background-color: rgb(65,64,64);
+    border-radius: 42px; padding: 10px 40px;
+}
+
+nav {display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+nav a {padding: 5px;}
+
+#featured-content {display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+row-gap: 100px;
+column-gap: 100px;}
+
+#artist-card {width: 100%;
+    background-color: rgb(187,184,184);
+}
+
+img { border-radius: 50%;}
+
+.artist-card img {width:100%;}
+
+div h2 {font-size: small;}
