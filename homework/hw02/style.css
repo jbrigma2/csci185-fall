@@ -30,15 +30,11 @@ body {
 aside {
     background-color: #000;
     grid-column-start: 1;
-   
 }
 header {
     background: #111;
     position: sticky;
     top: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
 }
 
 /* Uncomment to see borders:  */
@@ -87,14 +83,81 @@ footer {
 /* Part A: Left Navigation */
 /***************************/
 
-/* Your Code Here */
-
+i.h, i.se, i.li{
+    padding:15px;
+    margin-left: 10px;
+}
+i.s{
+    margin-left: 10px;
+    
+}
+i{
+    padding-bottom: 20px;
+}
 
 /********************************/
 /* Part B: Header & Nav Styling */
 /********************************/
 
-/* Your Code Here */
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 700px;
+    font-family:'Gotham', sans-serif;
+    font-size: 10pt;
+    padding-bottom:10px;
+   
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    
+}
+#upgrade{
+    display: flex;
+    flex-direction: row;  
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+    border-style:solid;
+    border-color:white;
+    justify-content: center;
+    vertical-align: middle;
+    align-items:center;
+   margin-left: 20px;
+   margin-top: 10px;
+   font-family:'Gotham', sans-serif;
+    font-size: 10pt;
+    
+    
+}
+#profile{
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style:hidden;
+    justify-content: center;
+    vertical-align: middle;
+    align-items:center;
+    background-color: rgb(47, 47, 47);
+   margin-left: 20px;
+   margin-top: 10px;
+   font-family:'Gotham', sans-serif;
+   font-size: 10pt;
+    
+}
+
+i.user{
+    vertical-align: text-bottom;
+    padding-top: 16px;
+}
 
 
 
@@ -106,19 +169,49 @@ footer {
 /* Your Code Here.
    For the desktop view, there should be 5 cards per row.
 */
- 
+#featured-content{
+    display: grid;
+    height: 100vh; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px; 
+    
+    }
+
+.artist-card img{
+    width: 100%;
+    border-radius: 50%;
+   
+}
+.artist-card{
+    border-style: hidden;
+    border-radius: 20px;
+    background-color:#222;
+    padding:10px;
+}
+
+
+
+
+
 
 /**************************/
 /* Part D: Responsive UIs */
 /**************************/
 
-/* Your Code Here */
-
-@media screen and (max-width: 1000px) {
-    /* 
-        Tablet Display: 3 cards per row!
+@media screen and (max-width: 1000px){
+  
+    #featured-content{
+       display:grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-column-gap: 2%;
+        
+        }
+    #nav{
+        display:flex;
+        grid-template-columns: auto;
+    }
     
-    */
 }
 
 
@@ -128,65 +221,19 @@ footer {
         * The aside panel and "Upgrade" button should no longer be visible.
         * There should only be a 1-column layout.
     */
+    #featured-content{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2%;
+         
+         }
+    body{
+        display:grid;
+        grid-template-columns: 0px;
+    }
+    #upgrade{
+        display:none;
+       
+    }
+
 }
-
-aside i {
-    margin-right: 10px;
-}
-
-aside a {
-    padding: 10px;
-}
-
-aside h1 {
-    padding-top: 5px;
-    padding-left: 8px;
-}
-
-.fa-spotify {
-    font-size: 35px;
-}
-
-aside .selected {
-    border-left: rgb( 31, 179, 61) solid 2px;
-}
-
-header {display:flex;
-    align-items: flex-end;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-header a {margin:20px;
-margin-top: 25px;}
-
-#upgrade {border: rgb(255,255,255) solid 1px;
-    border-radius: 42px; padding: 10px 40px;
-}
-
-#profile {background-color: rgb(65,64,64);
-    border-radius: 42px; padding: 10px 40px;
-}
-
-nav {display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-nav a {padding: 5px;}
-
-#featured-content {display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-row-gap: 100px;
-column-gap: 100px;}
-
-#artist-card {width: 100%;
-    background-color: rgb(187,184,184);
-}
-
-img { border-radius: 50%;}
-
-.artist-card img {width:100%;}
-
-div h2 {font-size: small;}
