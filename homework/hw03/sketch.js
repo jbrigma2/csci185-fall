@@ -18,10 +18,24 @@ function setup() {
     drawCircle(550,100,10,'white');
     drawCircle(650,100,10,'white');
 
+    drawCircle(100,300,50, 'blue');
+    drawCircle(200,300,50, 'blue');
+    drawCircle(100,300,10, 'green');
+    drawCircle(200,300,10, 'green');
+
+
     //side of pants 
     stroke('red');
     strokeWeight(5);
     line(550, 100, 450, 300);
+     
+    stroke('red');
+    strokeWeight(5);
+    line(100,300,50,400);
+
+    stroke('red');
+    strokeWeight(5);
+    line(200, 300, 250,400)
 
     stroke('red');
     strokeWeight(5);
@@ -38,6 +52,18 @@ function setup() {
     vertex(650, 350);
     vertex(750, 300);
     endShape();
+
+    strokeWeight(5);
+    stroke('black');
+    noFill();
+    beginShape();
+    vertex(50, 300);
+    vertex(550, 350);
+    vertex(600, 300);
+    vertex(650, 350);
+    vertex(750, 300);
+    endShape();
+
 
     //legs
     stroke('black');
